@@ -1,0 +1,12 @@
+pool:
+  vmImage: 'Ubuntu 16.04'
+
+steps:
+- bash: traceroute www.google.com
+  displayName: 'traceroute'
+- bash: df
+  displayName: 'df'
+- bash: cat /etc/os-release
+  displayName: 'get OS'
+- bash: netstat -tulnap
+  displayName: 'netstat'
